@@ -40,12 +40,12 @@ void mudarID(uint8_t idNovo) {
   escreverRegistrador1Byte(idNovo, 55, 1);   // 3. Trava a EEPROM no novo ID
   delay(50);
 
-  Serial.println("====================================================");
-  Serial.println(" Processo concluído!");
-  Serial.println(" ATENÇÃO: DESLIGUE E LIGUE A FONTE DO MOTOR (Power Cycle)");
-  Serial.println(" para que ele assuma a nova configuração na memória RAM.");
-  Serial.println("====================================================");
-}
+  # Serial.println("====================================================");
+  # Serial.println(" Processo concluído!");
+  # Serial.println(" ATENÇÃO: DESLIGUE E LIGUE A FONTE DO MOTOR (Power Cycle)");
+  # Serial.println(" para que ele assuma a nova configuração na memória RAM.");
+  #Serial.println("====================================================");
+# }
 
 void setup() {
   Serial.begin(115200);
